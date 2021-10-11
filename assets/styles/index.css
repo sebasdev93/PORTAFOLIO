@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../img/BOSQUE.jpg");
+    background-repeat: no-repeat;
+    background-size:100vw 100vh;
+}
+nav{
+    
+    padding: 1rem;
+
+}
+nav a{
+    padding: 1rem;
+    text-decoration: none;
+    color:white;
+    opacity: 0.5;
+    
+}
+nav a:hover {
+    background-color:#F50256;
+    color:black;
+    opacity:1;
+    transition: top 0.3s;
+  }
+
+.button-contact{
+    float:right;
+    color:#F50256;
+    padding: 6px;
+    opacity: 1;
+    border: 2px solid #F50256;
+    border-radius: 12px;
+    
+}
+.presentation{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    height: 90%;
+    
+}
+img{
+   width: 15%;
+   border-radius: 50%;
+}
+h1{
+    color:white;
+    font-size: 50px;
+    margin: 0;
+    opacity: 0.5;
+}
+h2{
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    opacity: 0.5;
+}
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color:#F50256;
+    font-size: 20px;
+  }
+  .icon-bar a:hover {
+    background-color:#F50256;
+    color:white
+  }
+@media only screen and (max-width:500px) {
+    .main{
+        background-color:#08011D;
+        background-image: none;    
+    }
+    nav{
+         overflow: hidden;
+         background-color:black;
+         position: relative;
+    }
+    nav a{
+        color: white;
+        padding: 14px 16px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        opacity: 1;
+    }
+    .button-contact{
+        all:inherit;
+        color: white;
+        opacity: 1;
+        text-align: center;
+    }
+    nav a:hover {
+        background-color:#F50256;
+        color:black;
+        transition: top 0.3s;
+      }
+    .presentation{
+        height: 60%;
+    
+    }
+    img{
+        width: 50%;
+    }
+    h1{
+        font-size: 40px;
+        padding-top: 10px;
+    }
+    .icon-bar {
+        position: fixed;
+        top: 50%;
+        -webkit-transform: translateY(-35%);
+        -ms-transform: translateY(-35%);
+        transform: translateY(-35%);
+      }
+ 
+    
+}
